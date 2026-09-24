@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-09-24T10:00:00+00:00",
+  "description": "Synthetic teaching data. All thresholds and actions are fictional lab policy.",
+  "shipments": [
+    {"id": "MEL-101", "location": "Melbourne", "temperature_c": 6.2, "observed_at": "2026-09-24T09:55:00+00:00", "eta_delay_hours": 1.5, "risk": "High Risk", "delay_probability": 0.8},
+    {"id": "MEL-102", "location": "Melbourne", "temperature_c": 3.0, "observed_at": "2026-09-24T09:58:00+00:00", "eta_delay_hours": 0.2, "risk": "Low Risk", "delay_probability": 0.1},
+    {"id": "MEL-103", "location": "Melbourne", "temperature_c": 7.0, "observed_at": "2026-09-23T09:00:00+00:00", "eta_delay_hours": 2.0, "risk": "High Risk", "delay_probability": 0.9},
+    {"id": "SYD-201", "location": "Sydney", "temperature_c": 4.0, "observed_at": "2026-09-24T09:59:00+00:00", "eta_delay_hours": 0.1, "risk": "Low Risk", "delay_probability": 0.1},
+    {"id": "SYD-202", "location": "Sydney", "temperature_c": null, "observed_at": "2026-09-24T09:59:00+00:00", "eta_delay_hours": 0.1, "risk": "Low Risk", "delay_probability": 0.1}
+  ]
+}

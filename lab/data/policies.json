@@ -1,0 +1,10 @@
+{
+  "version": "LAB-1.0",
+  "disclaimer": "Fictional teaching rules; not food-safety or operating guidance.",
+  "rules": [
+    {"id": "TEMP-01", "topic": "temperature cargo breach fresh perishables", "minimum_c": 0.0, "maximum_c": 4.0, "text": "For this exercise, a cargo reading outside 0 to 4 C needs human review. At exactly 4 C the upper limit has not been exceeded.", "action": "Ask the dispatcher to verify the sensor and contact the driver."},
+    {"id": "DATA-01", "topic": "stale missing telemetry data freshness", "max_age_minutes": 60, "text": "Missing, future-dated or older-than-60-minute telemetry cannot establish current cargo status.", "action": "Obtain a fresh validated sensor reading; do not infer a safe current state."},
+    {"id": "RISK-01", "topic": "high risk delay escalation manager", "delay_probability": 0.65, "text": "High Risk with delay probability greater than 0.65 needs manager review.", "action": "Ask the dispatcher to escalate to the duty manager."},
+    {"id": "ETA-01", "topic": "temperature breach delay diversion storage", "delay_hours": 1.0, "text": "A temperature breach with a verified delay greater than one hour needs a human to assess cold-storage alternatives.", "action": "Ask the dispatcher to assess an alternative cold-storage location."}
+  ]
+}

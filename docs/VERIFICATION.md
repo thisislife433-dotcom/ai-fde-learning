@@ -20,7 +20,7 @@
 | Paid model calls/tool selection | Requires user's API access and evaluation cases | Not verified |
 | Streamlit full-stack UI | Depends on the unverified services above | Not verified |
 | Cloud or Azure deployment | No resources provisioned | Not performed |
-| GitHub workflow run | Configuration included; a remote run must be inspected separately | Not yet claimed |
+| GitHub workflow run | [Run #1](https://github.com/thisislife433-dotcom/ai-fde-learning/actions/runs/36014466608) on commit `0d06034`: Ubuntu runner with Python 3.12; tests, demo and relative-link check all succeeded | Passed |
 
 ## Reproduce local checks
 

@@ -22,6 +22,12 @@
 | Cloud or Azure deployment | No resources provisioned | Not performed |
 | GitHub workflow run | [Run #1](https://github.com/thisislife433-dotcom/ai-fde-learning/actions/runs/36014466608) on commit `0d06034`: Ubuntu runner with Python 3.12; tests, demo and relative-link check all succeeded | Passed |
 
+## Delivery learning track: 15 October 2026
+
+The extension adds the agent/MCP and dev-to-prod learning path, contribution instructions, PR/issue templates, a broader relative-link check and CI triggers for documentation changes. The 12 existing tests, offline demo and expanded link check passed locally after these changes. Remote check evidence is available in the learning-path PR's Checks tab.
+
+The singular/plural truck-routing defect described in [D5](DELIVERY_PATH.md) was reproduced and remains an open learning exercise. The existing suite does not cover that case. No custom MCP server, HTTP service, container build, Azure infrastructure, branch protection or deployment approval configuration is claimed as implemented by this extension.
+
 ## Reproduce local checks
 
 ```bash

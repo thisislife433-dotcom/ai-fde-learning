@@ -13,6 +13,12 @@ Keep this file short. Commit only notes you are happy to retain in the repositor
 - Next concrete action: run `python -m lab demo` and explain the three Melbourne results
 - Last reviewed date:
 
+## Expanded goal agreed 15 October 2026
+
+Learn AI agents and MCP, then deliver a feature and a bug fix through branches, pull requests, automated checks, dev deployment and production promotion. Use the [delivery track](../docs/DELIVERY_PATH.md) and [release workflow](../docs/BRANCHING_AND_RELEASES.md).
+
+Discussion so far: business purpose, shipment facts versus policy rules, data freshness, tools and agent coordination. These concepts have been introduced; an independent explanation and first run on the learner's machine have not yet been recorded.
+
 ## Completion checklist
 
 - [ ] 0. Explain and run the offline example
@@ -28,6 +34,21 @@ Keep this file short. Commit only notes you are happy to retain in the repositor
 - [ ] 10. Explain deployment, costs and rollback
 - [ ] 11. Complete an independent change and revision
 - [ ] Final challenge: design the Azure support assistant
+
+## Delivery track evidence
+
+- [ ] D1. Create a branch, commit a small change, inspect a PR and complete its review
+- [ ] D2. Deliver a shipment-status HTTP feature with contract tests
+- [ ] D3. Connect a documentation MCP and build/test our read-only shipment MCP
+- [ ] D4. Connect a model-controlled agent and record tool-use evaluations
+- [ ] D5. Reproduce a defect, write a failing regression test and merge a bug fix
+- [ ] D6. Build/test a container in CI and record its immutable digest
+- [ ] D7. Provision Azure dev with IaC and deploy through OIDC
+- [ ] D8. Promote the dev-tested artifact to a separate learning production environment
+- [ ] D9. Practise rollback, a hotfix and synchronization back to develop
+- [ ] D10. Complete an independent release and write its evidence record
+
+For each completed item, record the issue, branch, PR, relevant CI run and what you personally verified. For deployments also record source commit, image digest, environment and smoke-test result. A pipeline passing does not by itself establish that the learner can explain it.
 
 ## My evidence log
 

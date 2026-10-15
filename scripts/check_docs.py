@@ -4,7 +4,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 errors = []
-for path in [ROOT / "README.md", *sorted((ROOT / "docs").glob("*.md")), *sorted((ROOT / "progress").glob("*.md"))]:
+paths = [*ROOT.glob("*.md"), *(ROOT / "docs").rglob("*.md"),
+         *(ROOT / "progress").glob("*.md"), *(ROOT / ".github").rglob("*.md")]
+for path in sorted(paths):
     for raw in re.findall(r"(?<!!)\[[^\]]+\]\(([^)]+)\)", path.read_text(encoding="utf-8")):
         target = raw.split("#", 1)[0]
         if not target or "://" in target or target.startswith("mailto:"):

@@ -27,6 +27,14 @@ The first two commands need only Python 3.10 or newer. The offline lab makes **n
 | What to do when something fails | [Troubleshooting](docs/TROUBLESHOOTING.md) |
 | What has actually been tested | [Verification](docs/VERIFICATION.md) |
 | A place to record progress and resume later | [Learning tracker](progress/LEARNING_TRACKER.md) |
+| AI agents, MCP, feature work, bug fixes and dev-to-prod delivery | [End-to-end delivery learning path](docs/DELIVERY_PATH.md) |
+| Branches, pull requests, release promotion and rollback | [Branching and releases](docs/BRANCHING_AND_RELEASES.md) |
+
+## Develop and release the project
+
+The original 12 lessons now have an additional practical delivery track. We will build features on `feature/*`, fix defects on `bugfix/*`, integrate through pull requests into `develop`, and promote tested releases to `main`. The planned cloud target is Azure Container Apps with GitHub Actions. Read [Contributing](CONTRIBUTING.md) before making a change.
+
+The delivery track is a learning plan and repository workflow foundation. The custom MCP server, container service, Azure infrastructure and deployment pipelines are future exercises, not running services. The existing workflow checks the offline lab and documents; it does not deploy anything.
 
 ## Original project and attribution
 

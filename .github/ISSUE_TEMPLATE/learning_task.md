@@ -6,7 +6,7 @@ title: "task: "
 
 ## Planning
 
-Roadmap: #2. Record task ID, type, phase, priority and current status. Use the native board Status field instead once that board is configured.
+Temporary tracker during Azure Boards migration; read docs/AZURE_BOARDS_SETUP.md first. After verified handover, create new tasks in Azure Boards and link any GitHub report to the actual Azure ID. Until then use roadmap #2 and record task code, type, phase, priority and current status.
 
 ## Desired outcome
 

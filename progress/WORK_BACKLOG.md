@@ -1,19 +1,19 @@
 # Work backlog
 
-**Prepared 16 October 2026.** This index maps the original lessons and delivery track to real GitHub tasks. It is an ordered index, not a second status tracker. Open each issue for current status, prerequisites, acceptance criteria and evidence.
+**Updated 16 October 2026.** Azure Boards is selected. This ordered index maps lessons and delivery work to the existing GitHub tasks, which remain the temporary tracker until verified transfer. Replace links with actual Azure IDs after import; the same numbers do not apply. This is not a duplicate status tracker.
 
 - [Master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2)
 - [All project issues](https://github.com/thisislife433-dotcom/ai-fde-learning/issues)
 - [Planning workflow](../docs/PROJECT_PLANNING.md)
 - [Personal learning evidence](LEARNING_TRACKER.md)
 
-Native GitHub Projects board setup is tracked in [P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3). Do not infer that a visual board exists from the presence of this index.
+[P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3) now tracks [Azure Boards setup](../docs/AZURE_BOARDS_SETUP.md). The import is prepared; account access and the destination organisation are still needed. No live Azure board is claimed.
 
 ## 0 — Planning
 
 | Task | Work item | Prerequisites | Learning map |
 |---|---|---|---|
-| [P00 / #3](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3) | Set up the planning board and issue-first workflow | None | Working agreement |
+| [P00 / #3](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3) | Set up Azure Boards and the work-item-first workflow | None | Working agreement |
 
 ## 1 — Foundations
 
@@ -71,5 +71,5 @@ Dependencies are learning and delivery prerequisites; independent rows need not 
 
 P1 means the next learning/foundation batch; P2 means scheduled after prerequisites, not optional. No calendar dates or velocity claims are imposed before the learner's available session time is known.
 
-Our baseline completion target is a synthetic-data learning production environment. Optional voice features, an Azure DevOps/Jira migration and real business production use require their own future issues and scope decisions.
+Our baseline completion target is a synthetic-data learning production environment. Azure Boards migration is now selected under P00. Optional voice features, switching CI to Azure Pipelines and real business production use require separate work items and scope decisions.
 

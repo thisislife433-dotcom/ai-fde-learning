@@ -1,109 +1,91 @@
 # Plan the work before changing the project
 
-**Agreed 16 October 2026.** Use GitHub Issues for the live backlog and GitHub Projects for the planned visual board. Tasks, code, pull requests and releases stay with this repository. We are learning the planning process as well as the software.
+**Decision, 16 October 2026:** use **Azure DevOps Boards** for planning and keep code, branches, pull requests and existing CI in **GitHub**. Azure Boards replaces the earlier GitHub Projects proposal.
 
-- [Master roadmap and current next steps](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2)
+**Migration is prepared, not completed.** Azure DevOps sign-in was declined. No organisation has been selected and no live project, import or integration is claimed. Existing GitHub issues remain the temporary tracker until transfer is verified. Do not create the superseded GitHub Projects board.
+
+- [Azure Boards setup and migration checklist](AZURE_BOARDS_SETUP.md)
+- [Temporary master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2)
 - [Ordered task index](../progress/WORK_BACKLOG.md)
-- [P00: planning and board setup](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3)
+- [P00: current setup task](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3)
 - [Personal learning checkpoint](../progress/LEARNING_TRACKER.md)
-
-The issues are real work items. The visual board has its own setup acceptance criteria in P00; it is not created merely by adding these documents. The browser was signed out of GitHub when the initial backlog was prepared, so native board setup remains pending. No separate Jira subscription or Azure resource was created for this planning work.
 
 ## One source for each kind of evidence
 
 | Record | What it owns |
 |---|---|
-| Master roadmap issue | Phase index, next task and significant planning changes |
-| Individual issue | Scope, prerequisites, acceptance criteria, blockers and completion evidence |
-| Issue Status line, until the board exists | Current work state |
-| Native Projects Status field, after setup | Current work state; remove the old Status line from issue bodies when migrating |
-| Pull request and CI run | Exact changes, review, checks and merge evidence |
-| Release/deployment task | Tested artifact, environment, approval, configuration and observed release result |
+| GitHub issues, before verified migration | Temporary scope, state, prerequisites and evidence |
+| Azure roadmap Epic and phase Features, after migration | Overall outcome, phases and planning decisions |
+| Azure User Story or Bug, after migration | Scope, prerequisites, criteria, blockers and evidence |
+| Azure board column and work-item State, after migration | Current state; use a Blocked tag for an obstacle |
+| GitHub PR and CI run | Exact changes, review, checks and merge evidence |
+| Release work item | Tested artifact, environment, approval and observed release result |
 | Learning tracker | What the learner personally ran, reviewed and can explain |
 
-The task index in this repository is an ordered map, not a duplicate status board. Open the linked issue for current evidence. Keep descriptions and status consistent when work changes; do not infer completion from an issue title or a checked-in implementation alone.
+The task index and CSV are maps and transfer material, not duplicate live trackers. After checking all Azure IDs and links, put handover notices on the original GitHub issues and stop updating their status. Moving a task does not complete it. Preserve issue history.
 
 ## What every work item needs
 
-Before starting a substantive lesson, feature, bug fix, infrastructure change or release, identify its existing issue or create a focused new one. Record:
+Before a lesson, feature, bug fix, infrastructure change or release, select its existing item or create a focused one. Record the problem, expected result, type, phase, priority, prerequisites, criteria, branch/review path and meaningful checks. Resolve account, environment and spending choices before execution.
 
-1. The user or learning problem and the observable result we want.
-2. Type, phase and priority. The initial backlog uses stable task IDs such as L01, F01 and B01.
-3. Linked prerequisites and any concrete blocker.
-4. Scope and acceptance criteria, including relevant failure behaviour.
-5. A proposed branch or review path, plus meaningful verification.
-6. Any account, environment or spending choice that must be resolved before execution.
+Keep stable task codes such as L01, F01 and B01 when Azure assigns numeric IDs. A GitHub issue number is not an Azure work-item ID. P1 means the next foundation batch; P2 means later work, not optional. Do not invent dates, sprint capacity or progress percentages.
 
-Use P1 for the next foundation/learning batch and P2 for planned later work. P2 does not mean optional. Record an actual incident's urgency separately if one arises. Do not invent dates, sprint capacity or progress percentages. Agree session availability before assigning calendar targets.
-
-Large future tasks are planning containers. Before implementation, split them into smaller linked issues if their changes cannot be reviewed and explained comfortably in one focused PR. Give each child its own acceptance criteria and update the parent with links.
+Split large future outcomes into smaller linked Tasks before implementation when one PR cannot comfortably deliver and explain the result. Each child needs criteria; the parent's outcome and learning checks still apply.
 
 ## Work states
 
-| State | Meaning and exit condition |
-|---|---|
-| Backlog | Agreed future scope; prerequisites or implementation detail remain unfinished |
-| Ready | Prerequisites are met, scope/checks are clear and we can select the next practical step |
-| In progress | This is the task we are actively doing; keep one task here at a time |
-| Review | The result and evidence are ready to inspect; a PR being open alone is not enough |
-| Blocked | A concrete prerequisite or external action prevents progress; record what will unblock it |
-| Done | The issue's acceptance criteria are observed and linked, with the required review/merge/deployment complete |
+Use the standard **Agile process** and this team board mapping. The project process is separate from the Basic access licence.
 
-An issue can return from Review to In progress when review finds a gap. Unblocking a task does not automatically mark it Done. Close a completed issue with the completed reason; close cancelled work with the appropriate not-planned reason and an explanation.
+| Column / marker | Agile State | Meaning |
+|---|---|---|
+| Backlog | New | Prerequisites or implementation detail remain outstanding |
+| Ready | New | Clear scope and checks; prerequisites met |
+| In progress | Active | Selected work; keep one item here at a time |
+| Review | Resolved | Result and evidence ready for review |
+| Done | Closed | Criteria, review and applicable deployment/learning evidence verified |
+| Blocked tag | Retain current State | Record the obstacle and next unblocking action |
+
+Ready and Backlog are board columns sharing New, not extra process states. Blocked is a tag. Check the mapping for User Story and Bug. An open PR alone is not enough for Review; a merge alone is not enough for Done. Reopen work if evidence reveals a gap.
 
 ## Our session routine
 
-1. Read the roadmap's current focus and the selected issue.
-2. Review the previous checkpoint for a few minutes.
-3. Explain one concept, do one practical step and inspect its result together.
-4. Make a small branch/commit/PR when code or repository documents change.
-5. Record what happened, what remains uncertain and the exact next action in the issue and learning tracker.
+1. Read the roadmap and select one Ready item.
+2. Review the previous checkpoint.
+3. Explain one concept, do one practical step and inspect it together.
+4. Use a focused branch, commit and PR when repository changes are needed.
+5. Record evidence, blockers and the next action in the live item and learning tracker.
 
-Phone-friendly work includes planning, reading files, examining PR diffs and checking CI results. L02 chooses the environment for terminal exercises. Do not assume a computer is configured or that the learner ran a command because the assistant ran it elsewhere.
+Phone work includes planning, reading files, PR diffs and CI. L02 chooses the environment for terminal exercises. Do not assume the learner ran a command because the assistant ran it elsewhere. Saying OK is not proof of mastery.
 
-The assistant can prepare work, test and explain it, and update the selected task's evidence during our sessions. A backlog is not an instruction to implement all tasks at once, provision paid resources, schedule reminders or mark every lesson complete.
+A backlog does not authorise every future implementation, paid provisioning, reminders or marking lessons complete. Calendar targets follow agreed availability.
 
-## Connect the task to Git and releases
+## Connect work to Git and releases
 
 Follow [Contributing](../CONTRIBUTING.md) and [Branching and releases](BRANCHING_AND_RELEASES.md).
 
-- Feature and ordinary bug-fix work starts from the latest develop. Include the task ID or issue number in a descriptive branch name.
-- Reference the issue in commits when useful and put `Refs #<issue-number>` in the PR description. Add a reverse PR link to the issue so the relationship is easy to find.
-- For the current existing learning-foundation PR, P00's documentation changes continue on feature/agent-delivery-learning-track. The draft remains the learner's first review exercise.
-- GitHub closing keywords are evaluated for PRs targeting the default branch. Our default is main; feature PRs target develop. Therefore do not rely on `Closes` or `Fixes` to close a develop task automatically.
-- After a develop PR merges, explicitly close its issue only if that issue's criteria are met. A release or deployed-behaviour issue remains open until its environment checks pass.
-- A feature merged to develop is not proof of deployment. Dev and production have their own tasks, artifact digests, configuration and smoke-test evidence.
-- Keep release and hotfix history, approval controls and artifact promotion consistent with the release guide.
+- Start feature and ordinary bug-fix branches from latest develop; include a stable task code.
+- Before migration, use `Refs #<github-issue-number>`. After Azure linking is verified, use a link-only `AB#<actual-azure-id>` and the work-item URL. Never substitute a GitHub number for an Azure ID.
+- Add the reverse PR link and checks to the live item. Avoid automatic closing/state-transition commands for learning and release work; check criteria explicitly.
+- P00 documentation continues in the existing feature/agent-delivery-learning-track draft PR #1, the learner's first review exercise.
+- GitHub closing keywords target default branch main; do not assume a PR into develop closes its issue. With either tracker, develop integration is not deployment.
+- Release work stays open until its environment, artifact, configuration and smoke checks pass. Use the release guide for promotion, rollback and hotfix synchronisation.
 
-## Completion evidence depends on the task
+## Completion evidence
 
-| Task type | Evidence to record |
+| Type | Evidence |
 |---|---|
-| Learning | The learner's own explanation, command/result or reviewed diff; no automatic pass for saying OK |
-| Feature | Expected behaviour, meaningful tests, reviewed PR and integration target |
-| Bug | Reproduction, failing regression on the parent, passing result after the fix and reviewed PR |
-| Model/MCP | Actual discovery/tool exchanges and evaluations, tested versions, evidence/citations and known limitations |
-| Infrastructure | Reviewed resource changes, identity/access checks, cost decisions and observed deployment output |
-| Release | Candidate source/tree, image digest, approval, environment/configuration and smoke checks |
-| Recovery | Known-good artifact/configuration, observed rollback or hotfix result and synchronisation evidence |
+| Learning | Learner explanation, command/result or reviewed diff |
+| Feature | Expected behaviour, meaningful checks, reviewed PR and integration target |
+| Bug | Reproduction, failing regression before fix, passing result after it and reviewed PR |
+| Model/MCP | Actual tool exchanges/evaluations, tested versions and limitations |
+| Infrastructure | Reviewed resources, identity checks, cost decisions and deployment result |
+| Release | Candidate source/tree, image digest, approval, environment and smoke checks |
+| Recovery | Known-good artifact/configuration and observed rollback or hotfix result |
 
-Preserve the distinction between implementation completed by the assistant and a skill demonstrated by the learner. Record both honestly. Keep secrets, private logs and account identifiers out of public issues and commits.
-
-## Planned native board configuration
-
-P00 owns completion of this setup and its verified board URL:
-
-- Name: **AI FDE - Learning and delivery**; link this repository.
-- States: Backlog, Ready, In progress, Review, Blocked and Done.
-- Fields: Phase, Priority and Type, populated from the task issues. Add dates only when actually agreed.
-- Views: an ordered backlog table and a board grouped by Status. Keep the roadmap issue as a reference rather than counting it as implementation work.
-- Add the task issues, map their current states, and verify both views before claiming setup is complete.
-- Keep completed issue closure and board state consistent. Do not configure an automation that marks a learning task complete merely because a PR merges.
-- After setup, add the board URL to the master roadmap, remove duplicate Status lines from the issue bodies and update P00 with evidence.
-
-Until this is complete, the individual issue's Status line is the usable live tracker. Dependencies are explicitly linked in issue bodies; this does not claim that native GitHub milestone, sub-issue or blocking relationships have been configured.
+Record assistant implementation and learner demonstration separately. Keep secrets, private logs and account details out of this public repository.
 
 ## References
 
-- [GitHub Projects: board, table and roadmap views](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-- [GitHub issue and PR links, including the default-branch closing rule](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)
+- [Azure Boards Agile workflow](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/agile-process-workflow?view=azure-devops)
+- [Azure Boards links to GitHub](https://learn.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops)
+- [GitHub issue closing rules](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue)

@@ -34,6 +34,14 @@ A [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issue
 
 After these documentation/template changes, all 12 existing unit tests, the offline demo, the relative-link check and `git diff --check` passed locally. No application behaviour or upstream source changed. The learner's checklist remains incomplete. Native Projects board setup is still tracked in [P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3), because the browser was signed out; no native board or board automation is claimed as configured.
 
+## Azure Boards decision and prepared transfer: 16 October 2026
+
+The user selected Azure DevOps Boards, replacing the earlier GitHub Projects proposal. [Setup instructions](AZURE_BOARDS_SETUP.md) and the [CSV](../planning/azure-boards-import.csv) are prepared in the existing draft PR. Code and CI remain in GitHub.
+
+Local import checks found 31 rows: one Epic, six phase Features, 23 User Stories and one Bug. All 24 source task codes, 123 acceptance-checklist entries, prerequisite hyperlinks and priorities are retained; title-column hierarchy counts are 1/6/4/4/4/5 tasks per phase. The new-item file excludes IDs, State, assignees and organisation-specific paths.
+
+All 12 existing unit tests, the offline demo, relative-link check and diff check passed. These checks do not exercise Azure's importer. Microsoft sign-in was declined; the destination organisation, live project, import validation, native dependency links, board views and GitHub integration remain unverified. Existing GitHub tasks remain the temporary tracker. No Azure resource or paid service was provisioned, and no learner milestone was marked complete.
+
 ## Reproduce local checks
 
 ```bash

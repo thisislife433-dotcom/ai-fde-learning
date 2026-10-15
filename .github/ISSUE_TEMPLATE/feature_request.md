@@ -6,7 +6,7 @@ title: "feat: "
 
 ## Planning
 
-Roadmap: #2. Set task ID, phase, priority and current status. Link prerequisites and note any concrete blocker. Read docs/PROJECT_PLANNING.md before starting.
+Read docs/PROJECT_PLANNING.md. After verified Azure Boards handover, plan features there and link this report to its actual Azure ID. Until then use roadmap #2, task code, phase, priority, status and linked prerequisites. Record any blocker.
 
 ## User need
 

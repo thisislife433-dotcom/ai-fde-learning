@@ -21,7 +21,7 @@ Discussion so far: business purpose, shipment facts versus policy rules, data fr
 
 ## Completion checklist
 
-Planning update, 16 October 2026: every future task is tracked in the [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) and [work backlog](WORK_BACKLOG.md). Branches and PR diffs have been introduced on the phone. No independent explanation or learner-run command has been verified yet, so the completion checklist remains unchecked.
+Planning update, 16 October 2026: the user selected **Azure DevOps Boards**. The [setup and import](../docs/AZURE_BOARDS_SETUP.md) are prepared; account access and the organisation choice are pending. The [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) and [task index](WORK_BACKLOG.md) remain the temporary tracker until verified transfer. Branches and PR diffs have been introduced on the phone. No independent explanation or learner-run command has been verified, so the checklist remains unchecked.
 
 - [ ] 0. Explain and run the offline example
 - [ ] 1. Write the business brief and discovery questions

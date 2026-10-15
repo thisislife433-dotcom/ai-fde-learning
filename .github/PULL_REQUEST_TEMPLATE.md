@@ -1,6 +1,6 @@
-## Tracking issue and completion target
+## Tracking work item and completion target
 
-Refs #<issue-number>. Link the task and state whether completion means documentation, integration into develop, a verified deployment or a demonstrated learning exercise. Add the PR link back to the issue. Closing keywords do not automatically close our develop-targeted tasks.
+During migration: Refs #<github-issue-number>. After Azure linking is verified: AB#<actual-azure-id> and its URL. Replace placeholders; these number systems differ. State whether completion means documentation, develop integration, a verified deployment or a demonstrated learning exercise. Add the reverse PR link. Use link-only references and check criteria before closing learning/release items.
 
 ## Problem and expected behaviour
 

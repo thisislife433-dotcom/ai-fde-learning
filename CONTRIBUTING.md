@@ -4,7 +4,7 @@ This repository is a teaching project. The workflow is part of what we are learn
 
 ## Plan the task first
 
-Read [Project planning](docs/PROJECT_PLANNING.md) and choose the existing issue from the [work backlog](progress/WORK_BACKLOG.md), or create a focused new one. Define the result, prerequisites, acceptance criteria and relevant checks before changing files. Keep one task In progress. Include its task ID or issue number in a descriptive branch name when creating a new branch.
+Read [Project planning](docs/PROJECT_PLANNING.md) and choose the existing work item from the [work backlog](progress/WORK_BACKLOG.md), or create a focused new one. Azure Boards is selected; GitHub issues are temporary until the [migration](docs/AZURE_BOARDS_SETUP.md) is verified. Define the result, prerequisites, criteria and checks before changing files. Keep one task In progress. Include its stable task code in a descriptive branch name.
 
 ## Start a feature
 
@@ -33,14 +33,14 @@ git status --short
 ```
 
 4. Stage only the intended paths with `git add`, inspect `git diff --cached`, then commit with a specific message such as `fix: handle singular truck in policy routing`.
-5. Push with `git push -u origin HEAD` and open a pull request with **base: develop**. The PR template asks for the tracking issue, problem, result and verification. Reference it with `Refs #<issue-number>` and add the PR link to the issue.
+5. Push with `git push -u origin HEAD` and open a pull request with **base: develop**. During migration use `Refs #<github-issue-number>`; after verified Azure linking use a link-only `AB#<actual-azure-id>` plus its URL. GitHub and Azure numbers are different. Record the problem, result and checks, and add the reverse PR link to the live work item.
 6. Inspect the diff and CI output. Resolve review feedback before merging. A passing check does not replace understanding the change.
 
 Use a squash merge for an individual feature or bug-fix PR. Preserve history with a merge commit for `develop` to `main` release PRs and `main` back to `develop` synchronization PRs. See [branching and releases](docs/BRANCHING_AND_RELEASES.md) for the reasons and release conditions.
 
 ## Record evidence
 
-After review and merge, verify the issue's acceptance criteria before closing it. GitHub's closing keywords target the default branch; do not assume merging into develop closes an issue or deploys a feature. Release and deployment tasks require their own observed environment checks.
+After review and merge, verify the work item's criteria before closing it. Avoid automatic closing/state-transition commands for Azure learning and release items. GitHub's closing keywords target the default branch; do not assume merging into develop closes an issue or deploys a feature. Release and deployment tasks require their own observed environment checks.
 
 Update [your tracker](progress/LEARNING_TRACKER.md) after doing the exercise. Record its PR, commands and result. The offline test workflow is available now. MCP, container and deployment checks will be added in their own exercises.
 

@@ -4,6 +4,8 @@
 
 The intended outcome is that you can trace one requirement through an issue, branch, commit, PR, test run, container image, dev deployment, production promotion and rollback. You should also be able to explain exactly which part the AI agent performed.
 
+The [work backlog](../progress/WORK_BACKLOG.md) now maps these units and the original lessons to linked task issues. Follow [Project planning](PROJECT_PLANNING.md): select one Ready task, define its completion evidence and update its status as work happens. The live issue plan brings the small D5 bug exercise forward; unit numbers remain stable for reference.
+
 ## What exists and what we will build
 
 | Available foundation | Future practical work |

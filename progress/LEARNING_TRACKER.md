@@ -10,7 +10,7 @@ Keep this file short. Commit only notes you are happy to retain in the repositor
 - What worked on my machine:
 - One thing I can explain without notes:
 - One thing I do not understand yet:
-- Next concrete action: run `python -m lab demo` and explain the three Melbourne results
+- Next concrete action: complete [L01 - review PR #1 on the phone](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/4), then use [L02](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/5) to choose the development environment and run the offline demo
 - Last reviewed date:
 
 ## Expanded goal agreed 15 October 2026
@@ -20,6 +20,8 @@ Learn AI agents and MCP, then deliver a feature and a bug fix through branches, 
 Discussion so far: business purpose, shipment facts versus policy rules, data freshness, tools and agent coordination. These concepts have been introduced; an independent explanation and first run on the learner's machine have not yet been recorded.
 
 ## Completion checklist
+
+Planning update, 16 October 2026: every future task is tracked in the [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) and [work backlog](WORK_BACKLOG.md). Branches and PR diffs have been introduced on the phone. No independent explanation or learner-run command has been verified yet, so the completion checklist remains unchecked.
 
 - [ ] 0. Explain and run the offline example
 - [ ] 1. Write the business brief and discovery questions

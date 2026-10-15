@@ -2,6 +2,8 @@
 
 Read README.md, docs/VERIFICATION.md, CONTRIBUTING.md and progress/LEARNING_TRACKER.md before continuing a learning task.
 
+- Use docs/PROJECT_PLANNING.md and the master roadmap issue #2 before starting substantive work. Find or create the task issue, read its prerequisites and acceptance criteria, and keep one task In progress. Planning a backlog does not authorise implementing every future item at once.
+- Keep issue/board status, PR links and evidence current during the selected task. Do not treat a develop merge as a production deployment or rely on default-branch closing keywords to close develop tasks.
 - Teach one concept and one practical step at a time. Record only observed learning progress; acknowledgement alone is not proof of mastery.
 - Distinguish the deterministic offline lab, the upstream AI application and proposed MCP/cloud work. Label simulated data and planned capabilities explicitly.
 - Use a focused feature or bug-fix branch and a pull request following docs/BRANCHING_AND_RELEASES.md. Check the current branch and worktree before edits. Preserve unrelated user changes.

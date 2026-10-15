@@ -28,6 +28,12 @@ The extension adds the agent/MCP and dev-to-prod learning path, contribution ins
 
 The singular/plural truck-routing defect described in [D5](DELIVERY_PATH.md) was reproduced and remains an open learning exercise. The existing suite does not cover that case. No custom MCP server, HTTP service, container build, Azure infrastructure, branch protection or deployment approval configuration is claimed as implemented by this extension.
 
+## Project planning: 16 October 2026
+
+A [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) and 24 task issues now cover the remaining lessons, agent/MCP work, a feature, a regression fix, CI, Azure dev, learning production, recovery and cleanup. Each issue records prerequisites, completion criteria and evidence to collect. [Project planning](PROJECT_PLANNING.md) and the [task index](../progress/WORK_BACKLOG.md) define how to use them.
+
+After these documentation/template changes, all 12 existing unit tests, the offline demo, the relative-link check and `git diff --check` passed locally. No application behaviour or upstream source changed. The learner's checklist remains incomplete. Native Projects board setup is still tracked in [P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3), because the browser was signed out; no native board or board automation is claimed as configured.
+
 ## Reproduce local checks
 
 ```bash

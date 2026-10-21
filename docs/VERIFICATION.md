@@ -32,7 +32,7 @@ The singular/plural truck-routing defect described in [D5](DELIVERY_PATH.md) was
 
 A [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) and 24 task issues now cover the remaining lessons, agent/MCP work, a feature, a regression fix, CI, Azure dev, learning production, recovery and cleanup. Each issue records prerequisites, completion criteria and evidence to collect. [Project planning](PROJECT_PLANNING.md) and the [task index](../progress/WORK_BACKLOG.md) define how to use them.
 
-After these documentation/template changes, all 12 existing unit tests, the offline demo, the relative-link check and `git diff --check` passed locally. No application behaviour or upstream source changed. The learner's checklist remains incomplete. Native Projects board setup is still tracked in [P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3), because the browser was signed out; no native board or board automation is claimed as configured.
+After these documentation/template changes, all 12 existing unit tests, the offline demo, the relative-link check and `git diff --check` passed locally. No application behaviour or upstream source changed. The learner's checklist remains incomplete. At that initial checkpoint, native Projects board setup was still tracked in [P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3), because the browser was signed out. This historical GitHub Projects proposal was superseded by Azure Boards; see the live setup record below.
 
 ## Azure Boards decision and prepared transfer: 16 October 2026
 
@@ -40,7 +40,19 @@ The user selected Azure DevOps Boards, replacing the earlier GitHub Projects pro
 
 Local import checks found 31 rows: one Epic, six phase Features, 23 User Stories and one Bug. All 24 source task codes, 123 acceptance-checklist entries, prerequisite hyperlinks and priorities are retained; title-column hierarchy counts are 1/6/4/4/4/5 tasks per phase. The new-item file excludes IDs, State, assignees and organisation-specific paths.
 
-All 12 existing unit tests, the offline demo, relative-link check and diff check passed. These checks do not exercise Azure's importer. Microsoft sign-in was declined; the destination organisation, live project, import validation, native dependency links, board views and GitHub integration remain unverified. Existing GitHub tasks remain the temporary tracker. No Azure resource or paid service was provisioned, and no learner milestone was marked complete.
+All 12 existing unit tests, the offline demo, relative-link check and diff check passed. These checks do not exercise Azure's importer. At this preparation checkpoint, Microsoft sign-in was incomplete and the live import and integration had not been verified. That access blocker was subsequently resolved; see the live setup record below. Existing GitHub tasks remain the temporary tracker. No Azure resource or paid service was provisioned, and no learner milestone was marked complete.
+
+## Live Azure Boards setup and repository checkpoint: 16–22 October 2026
+
+The selected destination is the private **aipoc** project. An unrestricted query found no existing items before Basic was changed to Agile. The importer saved 31 work items. The saved export matched titles, types, descriptions, priorities and parent links for every row, retaining 24 task outcomes and 123 criteria. B01's reproduction and criteria were additionally placed in its visible Repro Steps field.
+
+All 39 native predecessor links across 21 tasks were saved and checked. Stories and Bugs use Backlog/New, Ready/New, In progress/Active, Review/Resolved and Done/Closed. WIP is one; P00 is active, L01/L02 are Ready, and the remaining tasks are in Backlog. The Stories backlog showed all 24 tasks. Shared all-work and open-work queries were saved; the latter excludes Closed and Removed and includes Priority and Board Column. One Basic user was observed without changing licences or billing.
+
+On 22 October, the board reopened successfully with the recorded initial positions. [Setup evidence](AZURE_BOARDS_SETUP.md), the [task index](../progress/WORK_BACKLOG.md) and [ID map](../planning/azure-work-item-map.json) now identify the live destinations. The CSV records the actual import snapshot; do not repeat that new-item import. Raw exports and private account details are not committed.
+
+All 12 existing unit tests, the offline demo, documentation-link checks and git diff --check passed after this repository update. These checks do not establish GitHub app integration.
+
+GitHub app authorisation, native PR linking and final source-issue retirement remain pending. Ordinary URLs are not proof of app integration. PR 1 stays draft and unmerged for L01. No lesson, live AI/MCP integration, deployment or paid resource is claimed complete.
 
 ## Reproduce local checks
 

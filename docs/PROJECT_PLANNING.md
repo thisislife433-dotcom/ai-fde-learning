@@ -2,7 +2,7 @@
 
 **Decision, 16 October 2026:** use **Azure DevOps Boards** for planning and keep code, branches, pull requests and existing CI in **GitHub**. Azure Boards replaces the earlier GitHub Projects proposal.
 
-**Migration is prepared, not completed.** Azure DevOps sign-in was declined. No organisation has been selected and no live project, import or integration is claimed. Existing GitHub issues remain the temporary tracker until transfer is verified. Do not create the superseded GitHub Projects board.
+**The board is configured; integration and final handover are pending.** The private aipoc project has 31 saved items representing 24 tasks, with 39 verified native prerequisite links. [Open the board](https://dev.azure.com/waseemjaleel0723/aipoc/_boards/board/t/aipoc%20Team/Stories). Existing GitHub issues remain the temporary tracker until the app connection and cutover are verified. Do not create the superseded GitHub Projects board or repeat the new-item import.
 
 - [Azure Boards setup and migration checklist](AZURE_BOARDS_SETUP.md)
 - [Temporary master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2)

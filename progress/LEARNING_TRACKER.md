@@ -10,7 +10,7 @@ Keep this file short. Commit only notes you are happy to retain in the repositor
 - What worked on my machine:
 - One thing I can explain without notes:
 - One thing I do not understand yet:
-- Next concrete action: complete [L01 - review PR #1 on the phone](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/4), then use [L02](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/5) to choose the development environment and run the offline demo
+- Next concrete action: complete [L01 - review PR #1 on the phone](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/5/?view=edit), then use [L02](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/6/?view=edit) to choose the development environment and run the offline demo
 - Last reviewed date:
 
 ## Expanded goal agreed 15 October 2026
@@ -21,7 +21,7 @@ Discussion so far: business purpose, shipment facts versus policy rules, data fr
 
 ## Completion checklist
 
-Planning update, 16 October 2026: the user selected **Azure DevOps Boards**. The [setup and import](../docs/AZURE_BOARDS_SETUP.md) are prepared; account access and the organisation choice are pending. The [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) and [task index](WORK_BACKLOG.md) remain the temporary tracker until verified transfer. Branches and PR diffs have been introduced on the phone. No independent explanation or learner-run command has been verified, so the checklist remains unchecked.
+Planning update, 16 October 2026: the user selected **Azure DevOps Boards**. The [board setup and import](../docs/AZURE_BOARDS_SETUP.md) are verified in the private aipoc project. The GitHub app connection and final handover remain pending. L01 and L02 are Ready; P00 remains In progress. The [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) and [task index](WORK_BACKLOG.md) remain the temporary tracker until verified transfer. Branches and PR diffs have been introduced on the phone. No independent explanation or learner-run command has been verified, so the checklist remains unchecked.
 
 - [ ] 0. Explain and run the offline example
 - [ ] 1. Write the business brief and discovery questions

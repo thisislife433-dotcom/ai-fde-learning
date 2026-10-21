@@ -1,0 +1,381 @@
+{
+  "recorded": "2026-10-22",
+  "live_import_verified": "2026-10-16",
+  "project_url": "https://dev.azure.com/waseemjaleel0723/aipoc",
+  "board_url": "https://dev.azure.com/waseemjaleel0723/aipoc/_boards/board/t/aipoc%20Team/Stories",
+  "all_work_query_url": "https://dev.azure.com/waseemjaleel0723/aipoc/_queries/query-edit/9a485013-01b0-4e54-9740-3347619e9acb/",
+  "open_work_query_url": "https://dev.azure.com/waseemjaleel0723/aipoc/_queries/query/f28ee6bc-c4af-47aa-85c8-bb1bd553addd/",
+  "note": "Identity and prerequisite map, not a live status tracker. GitHub integration and tracker cutover remain pending. Do not re-import the new-item CSV into this populated project.",
+  "items": [
+    {
+      "code": null,
+      "azure_id": 1,
+      "type": "Epic",
+      "title": "AI FDE learning and delivery",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/1/?view=edit",
+      "parent_id": null,
+      "predecessor_ids": [],
+      "source_issue": null
+    },
+    {
+      "code": null,
+      "azure_id": 2,
+      "type": "Feature",
+      "title": "Phase 0: Planning",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/2/?view=edit",
+      "parent_id": 1,
+      "predecessor_ids": [],
+      "source_issue": null
+    },
+    {
+      "code": "P00",
+      "azure_id": 3,
+      "type": "User Story",
+      "title": "[P00] Set up Azure Boards and the work-item-first workflow",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/3/?view=edit",
+      "parent_id": 2,
+      "predecessor_ids": [],
+      "source_issue": 3
+    },
+    {
+      "code": null,
+      "azure_id": 4,
+      "type": "Feature",
+      "title": "Phase 1: Foundations",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/4/?view=edit",
+      "parent_id": 1,
+      "predecessor_ids": [],
+      "source_issue": null
+    },
+    {
+      "code": "L01",
+      "azure_id": 5,
+      "type": "User Story",
+      "title": "[L01] Review the first pull request on the phone",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/5/?view=edit",
+      "parent_id": 4,
+      "predecessor_ids": [],
+      "source_issue": 4
+    },
+    {
+      "code": "L02",
+      "azure_id": 6,
+      "type": "User Story",
+      "title": "[L02] Choose a development environment and run the offline lab",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/6/?view=edit",
+      "parent_id": 4,
+      "predecessor_ids": [],
+      "source_issue": 5
+    },
+    {
+      "code": "L03",
+      "azure_id": 7,
+      "type": "User Story",
+      "title": "[L03] Write the business brief through your first feature branch and PR",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/7/?view=edit",
+      "parent_id": 4,
+      "predecessor_ids": [
+        5,
+        6
+      ],
+      "source_issue": 6
+    },
+    {
+      "code": "L04",
+      "azure_id": 8,
+      "type": "User Story",
+      "title": "[L04] Inspect shipment data and define read-only tool contracts",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/8/?view=edit",
+      "parent_id": 4,
+      "predecessor_ids": [
+        6
+      ],
+      "source_issue": 7
+    },
+    {
+      "code": "L05",
+      "azure_id": 9,
+      "type": "User Story",
+      "title": "[L05] Draw the architecture and explain the business outcome",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/9/?view=edit",
+      "parent_id": 4,
+      "predecessor_ids": [
+        7,
+        8
+      ],
+      "source_issue": 8
+    },
+    {
+      "code": "L06",
+      "azure_id": 10,
+      "type": "User Story",
+      "title": "[L06] Design policy retrieval, versioning and reliable ingestion",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/10/?view=edit",
+      "parent_id": 4,
+      "predecessor_ids": [
+        8,
+        9
+      ],
+      "source_issue": 9
+    },
+    {
+      "code": null,
+      "azure_id": 11,
+      "type": "Feature",
+      "title": "Phase 2: Features and MCP",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/11/?view=edit",
+      "parent_id": 1,
+      "predecessor_ids": [],
+      "source_issue": null
+    },
+    {
+      "code": "B01",
+      "azure_id": 12,
+      "type": "Bug",
+      "title": "[B01] Fix singular truck routing with a failing regression test",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/12/?view=edit",
+      "parent_id": 11,
+      "predecessor_ids": [
+        7,
+        8
+      ],
+      "source_issue": 10
+    },
+    {
+      "code": "F01",
+      "azure_id": 13,
+      "type": "User Story",
+      "title": "[F01] Build a read-only shipment-status HTTP service",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/13/?view=edit",
+      "parent_id": 11,
+      "predecessor_ids": [
+        12,
+        9
+      ],
+      "source_issue": 11
+    },
+    {
+      "code": "M01",
+      "azure_id": 14,
+      "type": "User Story",
+      "title": "[M01] Connect and inspect an existing documentation MCP server",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/14/?view=edit",
+      "parent_id": 11,
+      "predecessor_ids": [
+        6
+      ],
+      "source_issue": 12
+    },
+    {
+      "code": "M02",
+      "azure_id": 15,
+      "type": "User Story",
+      "title": "[M02] Implement and test the shipment MCP adapter",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/15/?view=edit",
+      "parent_id": 11,
+      "predecessor_ids": [
+        13,
+        14
+      ],
+      "source_issue": 13
+    },
+    {
+      "code": null,
+      "azure_id": 16,
+      "type": "Feature",
+      "title": "Phase 3: AI application",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/16/?view=edit",
+      "parent_id": 1,
+      "predecessor_ids": [],
+      "source_issue": null
+    },
+    {
+      "code": "Q01",
+      "azure_id": 17,
+      "type": "User Story",
+      "title": "[Q01] Define evaluation cases and access boundaries before model integration",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/17/?view=edit",
+      "parent_id": 16,
+      "predecessor_ids": [
+        9,
+        10
+      ],
+      "source_issue": 14
+    },
+    {
+      "code": "A01",
+      "azure_id": 18,
+      "type": "User Story",
+      "title": "[A01] Run and document the original SQL, retrieval and Streamlit integration",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/18/?view=edit",
+      "parent_id": 16,
+      "predecessor_ids": [
+        6,
+        10,
+        17
+      ],
+      "source_issue": 15
+    },
+    {
+      "code": "A02",
+      "azure_id": 19,
+      "type": "User Story",
+      "title": "[A02] Connect the model-controlled assistant to the permitted MCP tools",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/19/?view=edit",
+      "parent_id": 16,
+      "predecessor_ids": [
+        15,
+        18,
+        17
+      ],
+      "source_issue": 16
+    },
+    {
+      "code": "Q02",
+      "azure_id": 20,
+      "type": "User Story",
+      "title": "[Q02] Run live agent evaluations and verify audit evidence",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/20/?view=edit",
+      "parent_id": 16,
+      "predecessor_ids": [
+        19,
+        17
+      ],
+      "source_issue": 17
+    },
+    {
+      "code": null,
+      "azure_id": 21,
+      "type": "Feature",
+      "title": "Phase 4: Azure dev",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/21/?view=edit",
+      "parent_id": 1,
+      "predecessor_ids": [],
+      "source_issue": null
+    },
+    {
+      "code": "C01",
+      "azure_id": 22,
+      "type": "User Story",
+      "title": "[C01] Build and test an immutable container artifact in CI",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/22/?view=edit",
+      "parent_id": 21,
+      "predecessor_ids": [
+        13,
+        12
+      ],
+      "source_issue": 18
+    },
+    {
+      "code": "I01",
+      "azure_id": 23,
+      "type": "User Story",
+      "title": "[I01] Agree Azure design, costs, identities and release controls",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/23/?view=edit",
+      "parent_id": 21,
+      "predecessor_ids": [
+        9,
+        22
+      ],
+      "source_issue": 19
+    },
+    {
+      "code": "I02",
+      "azure_id": 24,
+      "type": "User Story",
+      "title": "[I02] Provision Azure dev with Bicep and deploy through GitHub Actions",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/24/?view=edit",
+      "parent_id": 21,
+      "predecessor_ids": [
+        23,
+        22
+      ],
+      "source_issue": 20
+    },
+    {
+      "code": "I03",
+      "azure_id": 25,
+      "type": "User Story",
+      "title": "[I03] Validate the deployed agent, remote MCP and operational storage",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/25/?view=edit",
+      "parent_id": 21,
+      "predecessor_ids": [
+        24,
+        20,
+        15
+      ],
+      "source_issue": 21
+    },
+    {
+      "code": null,
+      "azure_id": 26,
+      "type": "Feature",
+      "title": "Phase 5: Release and operations",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/26/?view=edit",
+      "parent_id": 1,
+      "predecessor_ids": [],
+      "source_issue": null
+    },
+    {
+      "code": "R01",
+      "azure_id": 27,
+      "type": "User Story",
+      "title": "[R01] Promote the dev-tested release to learning production",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/27/?view=edit",
+      "parent_id": 26,
+      "predecessor_ids": [
+        25
+      ],
+      "source_issue": 22
+    },
+    {
+      "code": "O01",
+      "azure_id": 28,
+      "type": "User Story",
+      "title": "[O01] Practise rollback and verify recovery",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/28/?view=edit",
+      "parent_id": 26,
+      "predecessor_ids": [
+        27
+      ],
+      "source_issue": 23
+    },
+    {
+      "code": "O02",
+      "azure_id": 29,
+      "type": "User Story",
+      "title": "[O02] Deliver a hotfix and synchronise main back into develop",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/29/?view=edit",
+      "parent_id": 26,
+      "predecessor_ids": [
+        28
+      ],
+      "source_issue": 24
+    },
+    {
+      "code": "Z01",
+      "azure_id": 30,
+      "type": "User Story",
+      "title": "[Z01] Complete an independent release and Azure architecture challenge",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/30/?view=edit",
+      "parent_id": 26,
+      "predecessor_ids": [
+        29,
+        20
+      ],
+      "source_issue": 25
+    },
+    {
+      "code": "O03",
+      "azure_id": 31,
+      "type": "User Story",
+      "title": "[O03] Review running costs, retain useful notes and clean up the lab",
+      "url": "https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/31/?view=edit",
+      "parent_id": 26,
+      "predecessor_ids": [
+        30
+      ],
+      "source_issue": 26
+    }
+  ]
+}

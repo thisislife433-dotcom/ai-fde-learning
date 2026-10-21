@@ -1,82 +1,81 @@
-# Set up Azure Boards for AI FDE learning
+# Azure Boards for AI FDE learning
 
-**Selected 16 October 2026. Status: prepared; live setup awaits account access and the destination organisation.** The Microsoft sign-in prompt was declined. No Azure project, work items, board settings or GitHub integration have been created or verified.
+**Updated 22 October 2026. The board is configured and the backlog is saved. GitHub app integration and final tracker handover remain pending.**
 
-[P00 / GitHub issue #3](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3) owns this transfer. Existing issues remain the temporary tracker until every Azure item and link is verified. The earlier GitHub Projects proposal is superseded.
+- [Open the board](https://dev.azure.com/waseemjaleel0723/aipoc/_boards/board/t/aipoc%20Team/Stories)
+- [Open work query](https://dev.azure.com/waseemjaleel0723/aipoc/_queries/query/f28ee6bc-c4af-47aa-85c8-bb1bd553addd/)
+- [All work query](https://dev.azure.com/waseemjaleel0723/aipoc/_queries/query-edit/9a485013-01b0-4e54-9740-3347619e9acb/)
+- [P00 setup item](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/3/?view=edit) and its [temporary GitHub issue](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3)
+- [Task index](../progress/WORK_BACKLOG.md) and [verified ID/prerequisite map](../planning/azure-work-item-map.json)
 
 ## Project choices
 
-| Setting | Choice |
+| Setting | Verified choice |
 |---|---|
-| Organisation | User-selected personal/learning destination; not yet known |
-| Project | ai-fde-learning |
+| Organisation | waseemjaleel0723, selected by the user during sign-in |
+| Project | aipoc |
 | Visibility | Private |
-| Work-item process | Agile |
-| Access licence | Basic, within the first-five-user free allowance |
-| Code and PRs | Existing thisislife433-dotcom/ai-fde-learning GitHub repository |
-| CI/CD | Keep current GitHub Actions; Azure Pipelines is a separate learning decision |
-| Dates and iterations | Agree session availability first |
+| Process | Agile; changed from Basic while the project had no work items |
+| Access | One Basic user observed on 16 October; no licence or billing change made |
+| Code, branches and pull requests | thisislife433-dotcom/ai-fde-learning on GitHub |
+| CI | Existing GitHub Actions checks; deployment work remains planned |
+| Dates and capacity | No delivery dates or sprint capacity agreed |
 
-Use a personal learning organisation or another destination the user explicitly chooses. Do not create this project in an employer's organisation merely because it appears after sign-in.
+The original process was **Basic**, with Epics, Issues and Tasks. We chose **Agile** to organise the project as Epic → Feature → User Story/ Bug → implementation Tasks and to track bugs separately. It fits our feature, defect and release exercises. We can use this as a Kanban board without introducing sprint ceremonies. The process choice is separate from the **Basic access licence** and does not itself change the pricing tier.
 
-Microsoft currently requires an active Azure subscription for a new organisation; existing organisations and free limits are unaffected. First five Basic users remain free. Extra users, paid add-ons, excess pipeline/artifact usage, hosting and model calls are separate. A free board does not authorise paid services or a billing commitment.
+## What was saved and verified
 
-## Backlog structure
+On 16 October, an unrestricted query confirmed that the destination had no work items. The new-item import then saved **31 items**: one Epic, six Features, 23 User Stories and one Bug. These represent **24 tasks**, with seven grouping items.
 
-The [import file](../planning/azure-boards-import.csv) has **31 new items**: one Epic, six phase Features, 23 User Stories and one Bug. These represent the original **24 tasks**, plus seven containers; they are not 31 lessons.
+The exported IDs, titles, types, descriptions, priorities and parent links matched the import. All 123 acceptance-checklist entries were retained. The bug form did not display its imported Description, so B01's reproduction steps and criteria were also copied into its visible Repro Steps field. All **39 native predecessor links across 21 tasks** were saved and checked. P00, L01 and L02 have no prerequisites.
 
-| Phase Feature | Original task codes | Tasks |
-|---|---|---:|
-| 0: Planning | P00 | 1 |
-| 1: Foundations | L01–L06 | 6 |
-| 2: Features and MCP | B01, F01, M01, M02 | 4 |
-| 3: AI application | Q01, A01, A02, Q02 | 4 |
-| 4: Azure dev | C01, I01, I02, I03 | 4 |
-| 5: Release and operations | R01, O01, O02, Z01, O03 | 5 |
+| Phase | Feature ID | Task codes |
+|---|---:|---|
+| Planning | 2 | P00 |
+| Foundations | 4 | L01–L06 |
+| Features and MCP | 11 | B01, F01, M01, M02 |
+| AI application | 16 | Q01, A01, A02, Q02 |
+| Azure dev | 21 | C01, I01, I02, I03 |
+| Release and operations | 26 | R01, O01, O02, Z01, O03 |
 
-Hierarchy: Epic → phase Feature → User Story/Bug. Add small implementation Tasks when starting an outcome. B01 addresses a reproduced defect. Other rows describe learning/delivery outcomes, not completed implementations.
+All phase Features belong to [Epic 1](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/1/?view=edit). GitHub issue numbers and Azure IDs are different: for example, L01 is GitHub issue 4 and Azure work item 5.
 
-Each original task retains its code, full criteria, prerequisites, proposed branch/review path and source GitHub link. P00 reflects the Azure decision. The CSV is a dated transfer snapshot, not a live status source.
+## Board workflow
 
-## Create and import
+| Column | Agile State | Initial placement |
+|---|---|---|
+| Backlog | New | Tasks with outstanding prerequisites |
+| Ready | New | L01 (5), L02 (6) |
+| In progress | Active | P00 (3); WIP limit 1 |
+| Review | Resolved | Empty |
+| Done | Closed | Empty |
 
-1. Sign in and select the intended organisation. The user resolves any new-account, subscription and terms steps.
-2. Create the private project using **Agile**. Verify destination, visibility, process and Basic licence.
-3. Check target field names/types against a sample/export. The CSV uses indented Title columns, Description and Priority; it omits IDs, assignees, State, dates and area paths.
-4. Use **Boards → Queries → Import work items**, select the CSV, inspect the 31-row preview, then **Save items**.
-5. Resolve validation errors. Criteria are in Description. For B01, copy the retained reproduction/criteria into the visible Bug fields if its form does not display Description.
-6. Export the assigned Azure IDs. Verify every original task code, phase parent and Epic relationship.
+The mappings apply to both User Stories and Bugs. Bugs appear alongside requirements. Epics are enabled in backlog navigation. The Stories backlog showed all 24 tasks, including B01. Shared all-work and open-work queries are saved; the open query excludes Closed and Removed without a date cutoff and includes Priority and Board Column.
 
-Do not blindly repeat a new-item import: it can duplicate work. After a partial save, query/export existing codes and IDs, then import only missing rows. Use assigned Azure IDs for later updates.
+The board was reopened on 22 October and still showed P00 In progress and L01/L02 Ready. Setup activity is not evidence that the learner has completed a lesson.
 
-## Finish the board and links
+## Remaining GitHub connection and handover
 
-- Show Bugs with requirements on the team backlog, so B01 appears with User Stories.
-- Map Backlog/New, Ready/New, In progress/Active, Review/Resolved and Done/Closed. Use a Blocked tag with the actual blocker; retain State. This changes the team board, not process states.
-- Put L01 and L02 in Ready. P00 stays active during setup; tag it Blocked if access or another dependency interrupts work. Other tasks stay in Backlog. Import does not complete a lesson.
-- Use phase parents and retained type/learning notes for context; retain priorities 1 or 2. Add phase/type tags if useful after checking team conventions.
-- Use assigned IDs to create native Predecessor/Successor links for prerequisites. The CSV preserves references but cannot create these non-parent links. A prerequisite is the selected task's Predecessor.
-- Save a backlog view and open-work query with ID, type, title, State, Priority and Tags. Check counts and next Ready items; keep one item In progress.
-- Connect only this GitHub repository through the Azure Boards app and review requested permissions. Verify a link-only `AB#<actual-id>` in PR #1 against P00 and its reverse PR link. Do not enable automatic completion of learning items on merge. Ordinary hyperlinks help during pending authorisation but do not prove app integration works.
+1. Install/configure Microsoft's Azure Boards GitHub app for **only** thisislife433-dotcom/ai-fde-learning. Review the actual requested permissions before granting access. The GitHub connection has not been authorised or verified.
+2. Connect the existing organisation/project above. Do not create another project or import the same backlog again.
+3. Use link-only `AB#3` in [draft PR 1](https://github.com/thisislife433-dotcom/ai-fde-learning/pull/1), then verify the work-item link and reverse GitHub PR relation. An ordinary hyperlink does not prove integration. Avoid automatic completion commands.
+4. Add the exact Azure destination to each source GitHub issue, retire it as **transferred, not completed**, and preserve its history. Only then declare Azure Boards the sole live tracker.
+5. Ask the learner to locate the next Ready task and explain its purpose. Keep P00 open until all its criteria are met.
 
-## Complete the handover
+Until this handover is verified, the existing GitHub issues remain the temporary authority. Repository links provide access to the saved Azure items without claiming the cutover is complete.
 
-- [ ] Verify all 31 saved items, 24 task mappings, criteria, priorities and parent links.
-- [ ] Verify native prerequisite links and initial board positions; infer no learner completion.
-- [ ] Replace repository task links with actual Azure URLs, retaining source GitHub links as provenance.
-- [ ] Add a migration notice and correct Azure link to each original GitHub issue. Retire them as transferred, not completed; preserve their history.
-- [ ] Update roadmap/repo to say Azure Boards is live; remove old GitHub Status lines.
-- [ ] Verify GitHub linking, record the board URL/evidence in P00.
-- [ ] Have the learner identify L01/L02 and explain how to find the next task. Finish P00 only after all criteria are met.
+## Import file and recovery
 
-Until these checks pass, existing GitHub issues remain authoritative.
+[azure-boards-import.csv](../planning/azure-boards-import.csv) is the dated new-item snapshot used for the import, not a current export. It deliberately has no IDs. **Do not import it again into aipoc:** that would create duplicates. Use the ID map to locate existing items; inspect a current query/export before any repair. The CSV can preserve parent hierarchy, but native non-parent links were added separately.
 
-## Official references checked 16 October 2026
+## Cost and scope
 
-- [Organisation creation and subscription requirement](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/create-organization?view=azure-devops)
+The observed one-user Basic allocation fits the first-five-user free allowance documented at setup. No paid licence, subscription, add-on, Azure app resource or model usage was provisioned by this work. Hosting, AI calls and any future paid services require their own cost decision under I01.
+
+## Official references checked at setup
+
+- [Basic to Agile](https://learn.microsoft.com/en-us/azure/devops/organizations/settings/work/change-process-basic-to-agile?view=azure-devops)
 - [Azure DevOps pricing](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services/)
 - [CSV import and hierarchy](https://learn.microsoft.com/en-us/azure/devops/boards/queries/import-work-items-from-csv?view=azure-devops)
-- [Agile workflow](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/agile-process-workflow?view=azure-devops)
-- [Work-item fields](https://learn.microsoft.com/en-us/azure/devops/boards/work-items/guidance/work-item-field?view=azure-devops)
-- [Connect GitHub](https://learn.microsoft.com/en-us/azure/devops/boards/github/connect-to-github?view=azure-devops)
-- [GitHub work-item links](https://learn.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops)
+- [Install the Azure Boards GitHub app](https://learn.microsoft.com/en-us/azure/devops/boards/github/install-github-app?view=azure-devops)
+- [Link GitHub work](https://learn.microsoft.com/en-us/azure/devops/boards/github/link-to-from-github?view=azure-devops)

@@ -31,11 +31,11 @@ The first two commands need only Python 3.10 or newer. The offline lab makes **n
 | Branches, pull requests, release promotion and rollback | [Branching and releases](docs/BRANCHING_AND_RELEASES.md) |
 | Plan each task, define completion criteria and track its evidence | [Project planning workflow](docs/PROJECT_PLANNING.md) |
 | Selected planning tool, import file and handover checks | [Azure Boards setup](docs/AZURE_BOARDS_SETUP.md) |
-| Ordered issues for all remaining learning and delivery work | [Work backlog](progress/WORK_BACKLOG.md) and [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) |
+| Verified Azure IDs and source issues for remaining learning and delivery work | [Work backlog](progress/WORK_BACKLOG.md) and [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) |
 
 ## Develop and release the project
 
-Every new piece of work starts with a work item. **Azure DevOps Boards is our selected planning tool; code and PRs stay in GitHub.** The [setup and import](docs/AZURE_BOARDS_SETUP.md) are prepared; live creation awaits account access and the destination organisation. Until verified transfer, use the existing [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) to select one Ready task, link its branch and PR, and record evidence before calling it Done. [P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3) tracks the transfer.
+Every new piece of work starts with a work item. **Azure DevOps Boards is our selected planning tool; code and PRs stay in GitHub.** The [Azure board](https://dev.azure.com/waseemjaleel0723/aipoc/_boards/board/t/aipoc%20Team/Stories) is configured with all 24 planned tasks and prerequisite links. [Setup evidence](docs/AZURE_BOARDS_SETUP.md) records what is verified; the GitHub connection and final tracker handover remain pending. Until verified transfer, use the existing [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) to select one Ready task, link its branch and PR, and record evidence before calling it Done. [P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3) tracks the transfer.
 
 The original 12 lessons now have an additional practical delivery track. We will build features on `feature/*`, fix defects on `bugfix/*`, integrate through pull requests into `develop`, and promote tested releases to `main`. The planned cloud target is Azure Container Apps with GitHub Actions. Read [Contributing](CONTRIBUTING.md) before making a change.
 

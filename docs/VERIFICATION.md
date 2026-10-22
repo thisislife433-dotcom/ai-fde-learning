@@ -52,7 +52,19 @@ On 22 October, the board reopened successfully with the recorded initial positio
 
 All 12 existing unit tests, the offline demo, documentation-link checks and git diff --check passed after this repository update. These checks do not establish GitHub app integration.
 
-GitHub app authorisation, native PR linking and final source-issue retirement remain pending. Ordinary URLs are not proof of app integration. PR 1 stays draft and unmerged for L01. No lesson, live AI/MCP integration, deployment or paid resource is claimed complete.
+At that repository checkpoint, GitHub app authorisation, native PR linking and final source-issue retirement were pending. Ordinary URLs alone were not proof of app integration. The later verification below supersedes that blocker.
+
+## GitHub integration and tracker handover: 22 October 2026
+
+After the user completed sign-in and installation, Azure displayed a successful GitHub App connection. GitHub's saved installation settings were restricted from all repositories to the single `thisislife433-dotcom/ai-fde-learning` repository and reopened to verify the scope. No separate broad OAuth grant was accepted.
+
+Updating draft PR #1 with the link-only `AB#3` reference produced a native **GitHub Pull Request** relation in Azure P00's Development section. The relation showed the correct PR title, #1, target develop and Draft status; Azure Boards appeared as the updating identity. P00 remained Active.
+
+All 25 source GitHub records received exact Azure destinations. Roadmap #2 and task issues #4–26 were retired as transferred with `state_reason=not_planned`, preserving their original content. GitHub P00 (#3) remains open for the outstanding learner check, matching Azure P00. Azure Boards is now the live tracker. Repository planning, contribution and task templates use verified Azure IDs.
+
+Azure's connection-list display still included seven old repository names after the saved GitHub restriction; its display cleanup remains recorded in [P00 setup evidence](AZURE_BOARDS_SETUP.md). The active app permission scope is one selected repository. The optional sample-story and badge-PR wizard was skipped.
+
+All 12 existing unit tests, the offline demo, documentation-link checks and diff checks passed after the handover documentation changes. PR #1 stays draft and unmerged for L01. No learner demonstration, live AI/MCP integration, Azure deployment or paid resource is claimed complete.
 
 ## Reproduce local checks
 

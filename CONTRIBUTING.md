@@ -4,7 +4,7 @@ This repository is a teaching project. The workflow is part of what we are learn
 
 ## Plan the task first
 
-Read [Project planning](docs/PROJECT_PLANNING.md) and choose the existing work item from the [work backlog](progress/WORK_BACKLOG.md), or create a focused new one. Azure Boards is selected; GitHub issues are temporary until the [migration](docs/AZURE_BOARDS_SETUP.md) is verified. Define the result, prerequisites, criteria and checks before changing files. Keep one task In progress. Include its stable task code in a descriptive branch name.
+Read [Project planning](docs/PROJECT_PLANNING.md) and choose the existing Azure work item from the [work backlog](progress/WORK_BACKLOG.md), or create a focused new one in Azure Boards. The [handover](docs/AZURE_BOARDS_SETUP.md) is verified; original GitHub issues preserve history. Define the result, prerequisites, criteria and checks before changing files. Keep one task In progress. Include its stable task code in a descriptive branch name.
 
 ## Start a feature
 
@@ -33,7 +33,7 @@ git status --short
 ```
 
 4. Stage only the intended paths with `git add`, inspect `git diff --cached`, then commit with a specific message such as `fix: handle singular truck in policy routing`.
-5. Push with `git push -u origin HEAD` and open a pull request with **base: develop**. During migration use `Refs #<github-issue-number>`; after verified Azure linking use a link-only `AB#<actual-azure-id>` plus its URL. GitHub and Azure numbers are different. Record the problem, result and checks, and add the reverse PR link to the live work item.
+5. Push with `git push -u origin HEAD` and open a pull request with **base: develop**. Use a link-only `AB#<actual-azure-id>` plus its URL. GitHub and Azure numbers are different. Record the problem, result and checks, and verify the native GitHub PR relation in the Azure work item's Development section.
 6. Inspect the diff and CI output. Resolve review feedback before merging. A passing check does not replace understanding the change.
 
 Use a squash merge for an individual feature or bug-fix PR. Preserve history with a merge commit for `develop` to `main` release PRs and `main` back to `develop` synchronization PRs. See [branching and releases](docs/BRANCHING_AND_RELEASES.md) for the reasons and release conditions.

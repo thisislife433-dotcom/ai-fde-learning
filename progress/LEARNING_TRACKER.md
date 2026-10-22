@@ -21,7 +21,7 @@ Discussion so far: business purpose, shipment facts versus policy rules, data fr
 
 ## Completion checklist
 
-Planning update, 16 October 2026: the user selected **Azure DevOps Boards**. The [board setup and import](../docs/AZURE_BOARDS_SETUP.md) are verified in the private aipoc project. The GitHub app connection and final handover remain pending. L01 and L02 are Ready; P00 remains In progress. The [master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2) and [task index](WORK_BACKLOG.md) remain the temporary tracker until verified transfer. Branches and PR diffs have been introduced on the phone. No independent explanation or learner-run command has been verified, so the checklist remains unchecked.
+Planning update, 22 October 2026: **Azure DevOps Boards is the live tracker**. The [board, GitHub app connection and handover](../docs/AZURE_BOARDS_SETUP.md) are verified; PR #1 is linked natively to Azure P00. L01 and L02 are Ready. P00 remains In progress until the learner identifies the next Ready task; the original GitHub P00 issue also remains open for that check. Use the [Azure roadmap](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/1/?view=edit) and [task index](WORK_BACKLOG.md). Branches and PR diffs have been introduced on the phone. No independent explanation or learner-run command has been verified, so the checklist remains unchecked.
 
 - [ ] 0. Explain and run the offline example
 - [ ] 1. Write the business brief and discovery questions

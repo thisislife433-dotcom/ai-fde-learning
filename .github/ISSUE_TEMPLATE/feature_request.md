@@ -6,7 +6,7 @@ title: "feat: "
 
 ## Planning
 
-Read docs/PROJECT_PLANNING.md. After verified Azure Boards handover, plan features there and link this report to its actual Azure ID. Until then use roadmap #2, task code, phase, priority, status and linked prerequisites. Record any blocker.
+Read docs/PROJECT_PLANNING.md. Plan features in Azure Boards and link this GitHub report to its actual Azure ID. Record task code, phase, priority, status, prerequisites and any blocker in the Azure item.
 
 ## User need
 

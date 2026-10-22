@@ -2,27 +2,27 @@
 
 **Decision, 16 October 2026:** use **Azure DevOps Boards** for planning and keep code, branches, pull requests and existing CI in **GitHub**. Azure Boards replaces the earlier GitHub Projects proposal.
 
-**The board is configured; integration and final handover are pending.** The private aipoc project has 31 saved items representing 24 tasks, with 39 verified native prerequisite links. [Open the board](https://dev.azure.com/waseemjaleel0723/aipoc/_boards/board/t/aipoc%20Team/Stories). Existing GitHub issues remain the temporary tracker until the app connection and cutover are verified. Do not create the superseded GitHub Projects board or repeat the new-item import.
+**Azure Boards is the sole live tracker after the verified 22 October 2026 handover.** The private aipoc project has 31 saved items representing 24 tasks, with 39 verified native prerequisite links. [Open the board](https://dev.azure.com/waseemjaleel0723/aipoc/_boards/board/t/aipoc%20Team/Stories). GitHub PR #1 has a verified native relation to Azure P00 through `AB#3`. Original GitHub issues now point to their Azure destinations. Do not create the superseded GitHub Projects board or repeat the new-item import.
 
-- [Azure Boards setup and migration checklist](AZURE_BOARDS_SETUP.md)
-- [Temporary master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2)
+- [Azure Boards setup and handover evidence](AZURE_BOARDS_SETUP.md)
+- [Azure roadmap Epic](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/1/?view=edit)
 - [Ordered task index](../progress/WORK_BACKLOG.md)
-- [P00: current setup task](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3)
+- [P00: current setup task](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/3/?view=edit)
 - [Personal learning checkpoint](../progress/LEARNING_TRACKER.md)
 
 ## One source for each kind of evidence
 
 | Record | What it owns |
 |---|---|
-| GitHub issues, before verified migration | Temporary scope, state, prerequisites and evidence |
-| Azure roadmap Epic and phase Features, after migration | Overall outcome, phases and planning decisions |
-| Azure User Story or Bug, after migration | Scope, prerequisites, criteria, blockers and evidence |
-| Azure board column and work-item State, after migration | Current state; use a Blocked tag for an obstacle |
+| Original GitHub issues | Historical scope and transfer notices; follow each Azure destination |
+| Azure roadmap Epic and phase Features | Overall outcome, phases and planning decisions |
+| Azure User Story or Bug | Scope, prerequisites, criteria, blockers and evidence |
+| Azure board column and work-item State | Current state; use a Blocked tag for an obstacle |
 | GitHub PR and CI run | Exact changes, review, checks and merge evidence |
 | Release work item | Tested artifact, environment, approval and observed release result |
 | Learning tracker | What the learner personally ran, reviewed and can explain |
 
-The task index and CSV are maps and transfer material, not duplicate live trackers. After checking all Azure IDs and links, put handover notices on the original GitHub issues and stop updating their status. Moving a task does not complete it. Preserve issue history.
+The task index and CSV are maps and transfer material, not duplicate live trackers. Handover notices preserve the original GitHub issue history. The roadmap and 23 task issues are closed as transferred using GitHub's `not_planned` reason; the work remains planned in Azure. GitHub P00 (#3) stays open until the learner identifies the next Ready task, as does Azure P00. Moving a task does not complete it.
 
 ## What every work item needs
 
@@ -64,7 +64,7 @@ A backlog does not authorise every future implementation, paid provisioning, rem
 Follow [Contributing](../CONTRIBUTING.md) and [Branching and releases](BRANCHING_AND_RELEASES.md).
 
 - Start feature and ordinary bug-fix branches from latest develop; include a stable task code.
-- Before migration, use `Refs #<github-issue-number>`. After Azure linking is verified, use a link-only `AB#<actual-azure-id>` and the work-item URL. Never substitute a GitHub number for an Azure ID.
+- Use a link-only `AB#<actual-azure-id>` and the work-item URL. Never substitute a GitHub number for an Azure ID.
 - Add the reverse PR link and checks to the live item. Avoid automatic closing/state-transition commands for learning and release work; check criteria explicitly.
 - P00 documentation continues in the existing feature/agent-delivery-learning-track draft PR #1, the learner's first review exercise.
 - GitHub closing keywords target default branch main; do not assume a PR into develop closes its issue. With either tracker, develop integration is not deployment.

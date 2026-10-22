@@ -1,16 +1,16 @@
 # Work backlog
 
-**Updated 22 October 2026.** This index links the saved Azure work items and preserves their original GitHub issues. The Azure board and prerequisites are verified; GitHub integration and final cutover remain pending. GitHub issues remain the temporary authority until that cutover. This index is not a duplicate status tracker.
+**Updated 22 October 2026. Azure Boards is the live tracker.** This index links the saved Azure work items and preserves their original GitHub issues. The board, prerequisites and native GitHub PR relation are verified. Source issues have transfer notices; the roadmap and 23 tasks are retired as transferred, while GitHub P00 remains open for the learner's next-task check. This index is not a duplicate status tracker.
 
 - [Azure board](https://dev.azure.com/waseemjaleel0723/aipoc/_boards/board/t/aipoc%20Team/Stories)
 - [Verified ID and prerequisite map](../planning/azure-work-item-map.json)
 
-- [Master roadmap](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/2)
-- [All project issues](https://github.com/thisislife433-dotcom/ai-fde-learning/issues)
+- [Azure roadmap](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/1/?view=edit)
+- [Original GitHub issue history](https://github.com/thisislife433-dotcom/ai-fde-learning/issues)
 - [Planning workflow](../docs/PROJECT_PLANNING.md)
 - [Personal learning evidence](LEARNING_TRACKER.md)
 
-[P00](https://github.com/thisislife433-dotcom/ai-fde-learning/issues/3) now tracks [Azure Boards setup](../docs/AZURE_BOARDS_SETUP.md). All 31 items are saved, including 24 task outcomes, with 39 native prerequisite links. The remaining setup is the GitHub app connection, source-issue handover and learner confirmation of the next Ready task.
+[P00](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/3/?view=edit) tracks [Azure Boards setup](../docs/AZURE_BOARDS_SETUP.md). All 31 items are saved, including 24 task outcomes, with 39 native prerequisite links. The app connection and source-issue handover are verified. The learner's identification of the next Ready task remains outstanding; see the setup record for the connection-list display discrepancy.
 
 ## 0 — Planning
 
@@ -74,5 +74,5 @@ Dependencies are learning and delivery prerequisites; independent rows need not 
 
 P1 means the next learning/foundation batch; P2 means scheduled after prerequisites, not optional. No calendar dates or velocity claims are imposed before the learner's available session time is known.
 
-Our baseline completion target is a synthetic-data learning production environment. Azure Boards migration is now selected under P00. Optional voice features, switching CI to Azure Pipelines and real business production use require separate work items and scope decisions.
+Our baseline completion target is a synthetic-data learning production environment. Azure Boards migration is recorded under P00. Optional voice features, switching CI to Azure Pipelines and real business production use require separate work items and scope decisions.
 

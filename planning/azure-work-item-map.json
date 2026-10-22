@@ -5,7 +5,9 @@
   "board_url": "https://dev.azure.com/waseemjaleel0723/aipoc/_boards/board/t/aipoc%20Team/Stories",
   "all_work_query_url": "https://dev.azure.com/waseemjaleel0723/aipoc/_queries/query-edit/9a485013-01b0-4e54-9740-3347619e9acb/",
   "open_work_query_url": "https://dev.azure.com/waseemjaleel0723/aipoc/_queries/query/f28ee6bc-c4af-47aa-85c8-bb1bd553addd/",
-  "note": "Identity and prerequisite map, not a live status tracker. GitHub integration and tracker cutover remain pending. Do not re-import the new-item CSV into this populated project.",
+  "github_integration_verified": "2026-10-22",
+  "tracker_handover_verified": "2026-10-22",
+  "note": "Identity and prerequisite map, not a live status tracker. Azure Boards is the live tracker. Original GitHub records have transfer notices; GitHub P00 stays open for the learner check. Do not re-import the new-item CSV into this populated project.",
   "items": [
     {
       "code": null,

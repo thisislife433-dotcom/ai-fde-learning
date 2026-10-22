@@ -6,7 +6,7 @@ title: "fix: "
 
 ## Planning
 
-After verified Azure Boards handover, track the fix there and link this report to its actual Azure ID. Until then use roadmap #2, task code, phase, priority and status. Link prerequisites, related release and any blocker. See docs/AZURE_BOARDS_SETUP.md.
+Track the fix in Azure Boards and link this GitHub report to its actual Azure ID. Record task code, phase, priority, status, prerequisites, related release and any blocker in the Azure item. See docs/AZURE_BOARDS_SETUP.md.
 
 ## Expected and actual behaviour
 

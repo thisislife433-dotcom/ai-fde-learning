@@ -6,7 +6,7 @@ title: "task: "
 
 ## Planning
 
-Temporary tracker during Azure Boards migration; read docs/AZURE_BOARDS_SETUP.md first. After verified handover, create new tasks in Azure Boards and link any GitHub report to the actual Azure ID. Until then use roadmap #2 and record task code, type, phase, priority and current status.
+Create learning tasks in Azure Boards; read docs/AZURE_BOARDS_SETUP.md first. Link any GitHub report to the actual Azure ID. Record task code, type, phase, priority, prerequisites, current status and learning evidence in the Azure item.
 
 ## Desired outcome
 

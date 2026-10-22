@@ -1,6 +1,6 @@
 ## Tracking work item and completion target
 
-During migration: Refs #<github-issue-number>. After Azure linking is verified: AB#<actual-azure-id> and its URL. Replace placeholders; these number systems differ. State whether completion means documentation, develop integration, a verified deployment or a demonstrated learning exercise. Add the reverse PR link. Use link-only references and check criteria before closing learning/release items.
+AB#<actual-azure-id> and its URL. Replace placeholders; GitHub issue numbers and Azure IDs differ. State whether completion means documentation, develop integration, a verified deployment or a demonstrated learning exercise. Verify the native PR relation in the Azure work item's Development section. Use link-only references and check criteria before closing learning/release items.
 
 ## Problem and expected behaviour
 

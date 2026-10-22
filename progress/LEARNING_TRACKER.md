@@ -10,10 +10,18 @@ Keep this file short. Commit only notes you are happy to retain in the repositor
 - What worked on my machine:
 - One thing I can explain without notes:
 - One thing I do not understand yet:
-- Next concrete action: run `python -m lab demo` and explain the three Melbourne results
+- Next concrete action: complete [L01 - review PR #1 on the phone](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/5/?view=edit), then use [L02](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/6/?view=edit) to choose the development environment and run the offline demo
 - Last reviewed date:
 
+## Expanded goal agreed 15 October 2026
+
+Learn AI agents and MCP, then deliver a feature and a bug fix through branches, pull requests, automated checks, dev deployment and production promotion. Use the [delivery track](../docs/DELIVERY_PATH.md) and [release workflow](../docs/BRANCHING_AND_RELEASES.md).
+
+Discussion so far: business purpose, shipment facts versus policy rules, data freshness, tools and agent coordination. These concepts have been introduced; an independent explanation and first run on the learner's machine have not yet been recorded.
+
 ## Completion checklist
+
+Planning update, 22 October 2026: **Azure DevOps Boards is the live tracker**. The [board, GitHub app connection and handover](../docs/AZURE_BOARDS_SETUP.md) are verified; PR #1 is linked natively to Azure P00. L01 and L02 are Ready. P00 remains In progress until the learner identifies the next Ready task; the original GitHub P00 issue also remains open for that check. Use the [Azure roadmap](https://dev.azure.com/waseemjaleel0723/aipoc/_workitems/edit/1/?view=edit) and [task index](WORK_BACKLOG.md). Branches and PR diffs have been introduced on the phone. No independent explanation or learner-run command has been verified, so the checklist remains unchecked.
 
 - [ ] 0. Explain and run the offline example
 - [ ] 1. Write the business brief and discovery questions
@@ -28,6 +36,21 @@ Keep this file short. Commit only notes you are happy to retain in the repositor
 - [ ] 10. Explain deployment, costs and rollback
 - [ ] 11. Complete an independent change and revision
 - [ ] Final challenge: design the Azure support assistant
+
+## Delivery track evidence
+
+- [ ] D1. Create a branch, commit a small change, inspect a PR and complete its review
+- [ ] D2. Deliver a shipment-status HTTP feature with contract tests
+- [ ] D3. Connect a documentation MCP and build/test our read-only shipment MCP
+- [ ] D4. Connect a model-controlled agent and record tool-use evaluations
+- [ ] D5. Reproduce a defect, write a failing regression test and merge a bug fix
+- [ ] D6. Build/test a container in CI and record its immutable digest
+- [ ] D7. Provision Azure dev with IaC and deploy through OIDC
+- [ ] D8. Promote the dev-tested artifact to a separate learning production environment
+- [ ] D9. Practise rollback, a hotfix and synchronization back to develop
+- [ ] D10. Complete an independent release and write its evidence record
+
+For each completed item, record the issue, branch, PR, relevant CI run and what you personally verified. For deployments also record source commit, image digest, environment and smoke-test result. A pipeline passing does not by itself establish that the learner can explain it.
 
 ## My evidence log
 

@@ -2,9 +2,7 @@ name: Learning lab checks
 on:
   workflow_dispatch:
   push:
-    paths: ['lab/**', 'tests/**', 'scripts/**', '.github/workflows/checks.yml']
   pull_request:
-    paths: ['lab/**', 'tests/**', 'scripts/**', '.github/workflows/checks.yml']
 permissions:
   contents: read
 jobs:

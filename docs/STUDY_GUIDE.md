@@ -4,6 +4,8 @@ Use one lesson at a time. Each lesson has a concept, a concrete task and evidenc
 
 Suggested rhythm: 30-45 minutes on weekdays, with a longer practical session when convenient. Review the previous lesson for five minutes, do one new task, then record a checkpoint.
 
+**Expanded goal:** Learn the delivery lifecycle as well as the AI application. The [additional delivery track](DELIVERY_PATH.md) covers coding agents, MCP, feature and bug-fix branches, pull requests, CI, Azure dev/prod deployment and rollback. Begin its Git exercise after the first offline run; combine later units with the relevant lessons here. Preparing the track does not complete those exercises.
+
 ## Video map
 
 These are the published chapter boundaries; the lessons below regroup them for learning.
